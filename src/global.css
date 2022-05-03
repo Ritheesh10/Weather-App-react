@@ -1,0 +1,80 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    font-family: sans-serif;
+    /* background-color: #999; */
+    align-items: center;
+}
+
+.appdiv{
+    height: 100vh;
+    margin: auto;
+    background-image:linear-gradient(rgb(74, 73, 73,0.4),rgb(41, 42, 41,0.2)), url('https://cdn.pixabay.com/photo/2020/03/26/18/28/rain-4971360_960_720.jpg');
+    background-size: cover;
+    width: 30rem;
+    text-align: center;
+    padding: 1rem;
+   
+}
+
+.appdiv input{
+    margin-top: 1rem;
+    padding: 0.5rem 0.5rem;
+    width: 80%;
+    border: none;
+    border-radius: 8px;
+    font-size: larger;
+    outline: none;
+    box-shadow: 0px 4px 2px 2px #2d2c2c;
+}
+.appdiv input:focus{
+    border: none;
+}
+
+.output{
+    color: white;
+  font-size: 1.8rem;
+    margin:3rem 5rem;
+    animation: anime;
+    animation-duration: 1s;
+    animation-delay: 0s;
+   animation-iteration-count:initial;
+}
+@keyframes anime {
+    60%{transform: translate(0,20%)}
+    40%{transition: all 0.3s ease-in-out;}
+}
+
+.output h5{
+    font-style: italic;
+}
+
+.output h4{
+    font-size: 3.5rem;
+}
+
+.temperature{
+    background-image: linear-gradient(rgba(181, 178, 178, 0.6),rgba(165, 165, 165, 0.6)),url('');
+    margin: 1rem 0;
+    padding:3rem 1rem;
+   
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 3px white;
+}
+
+.temperature h1{
+    font-size: 3.2rem;
+    display: inline;
+    gap: 0px;
+}
+
+.temperature span{
+    font-size: 2.5rem;
+    padding-left: 0.5rem;
+}
+
